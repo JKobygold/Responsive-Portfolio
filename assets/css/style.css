@@ -136,6 +136,9 @@ color: green;
   display: table;
 }
 
+p{
+  color: white;
+}
 
 /* @media screen and (max-width: 100%) {
   body {

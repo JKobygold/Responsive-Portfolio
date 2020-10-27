@@ -6,6 +6,7 @@
 }
 
 
+
 /* relevant styles */
 .img__wrap {
   position: relative;
@@ -41,6 +42,7 @@ header {
 
 
 .white-box {
+  overflow: scroll;
   background-color: #aaa9ad;
   color: black;
   width: 170;
@@ -50,7 +52,6 @@ header {
 }
 
 Body {
-
   background-image: url("https://previews.123rf.com/images/deberarr/deberarr1301/deberarr130100020/17432852-old-wood-tree-texture-background-pattern.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -61,18 +62,9 @@ Body {
   color: black;
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
-
+  background-size: 100% 30%  ;
+  
 }
-
-/* #name { background-color:turquoise ;
-    margin-left:40px ;
-    padding: 30px;
-     color: white;
-     position:absolute;
-     left:0;
-     top:0;
- } */
-
 .container {
   width: 1000px;
 
@@ -104,6 +96,44 @@ Body {
   -o-background-size: cover;
   background-size: cover;
   color: white;
+
+  border-style: groove;
+  border-radius: 25px;
+  padding-left: 20px;
+  margin-bottom: 100px;
+}
+
+hr{
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #F05F40;
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* border: 0;
+    border-top: 1px solid rgba(0,0,0,.1); */
+}
+
+.box-2 {
+  background-color: white;
+  border: 2px #4b4c5c;
+  border-style:solid ;
+  color: black;
+
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: black;
 
   border-style: groove;
   border-radius: 25px;
@@ -175,6 +205,38 @@ color: green;
 
 p{
   color: black;
+}
+
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.hvr-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 
 
